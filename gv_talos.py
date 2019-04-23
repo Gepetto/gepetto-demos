@@ -1,17 +1,16 @@
 #!/usr/bin/env python2
 
-from argparse import ArgumentParser
 from pathlib import Path
-from subprocess import Popen
 
 import pinocchio as pin
 from pinocchio.robot_wrapper import RobotWrapper
 
-parser = ArgumentParser()
-parser.add_argument('robotpkg_prefix', nargs='?', default='/opt/openrobots')
+from integration_utils import wrap_with_processes
+
+DEPS = ['py-pinocchio', 'py-qt-gepetto-viewer-corba', 'example-robot-data']
 
 
-def main(robotpkg_prefix):
+def main(robotpkg_prefix, **kwargs):
     pkg = Path(robotpkg_prefix) / 'share/example-robot-data'
     urdf = 'talos_data/robots/talos_reduced.urdf'
     robot = RobotWrapper.BuildFromURDF(str(pkg / urdf), [str(pkg)], pin.JointModelFreeFlyer())
@@ -21,10 +20,4 @@ def main(robotpkg_prefix):
 
 
 if __name__ == '__main__':
-    gepetto_gui = Popen('gepetto-gui')
-    try:
-        main(**vars(parser.parse_args()))
-    finally:
-        gepetto_gui.terminate()
-    print('Done. Press Enter to exit')
-    raw_input()
+    wrap_with_processes(['gepetto-gui'], main, DEPS)
