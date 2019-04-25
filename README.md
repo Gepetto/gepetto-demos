@@ -1,6 +1,13 @@
 # Gepetto softwares integration tests
 
-## gv_talos
+## Robots
 
-Checks py-pinocchio, py-qt-gepetto-viewer-corba & example-robot-data. One can
-provide an alternative robotpkg installation prefix as a script argument.
+Load a robot in a viewer, and put it in a standard posture.
+
+## HPP
+
+Run examples available on the hpp-benchmark package.
+
+## RBPRM
+
+Run examples available on the hpp-rbprm-corba package.
