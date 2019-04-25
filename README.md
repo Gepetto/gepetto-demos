@@ -11,3 +11,7 @@ Run examples available on the hpp-benchmark package.
 ## RBPRM
 
 Run examples available on the hpp-rbprm-corba package.
+
+## Crocoddyl
+
+Run examples available on the croccodyl package.

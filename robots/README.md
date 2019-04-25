@@ -4,9 +4,9 @@ Load a robot in a viewer, and put it in a standard posture.
 
 ## Dependencies
 
-- [pinocchio](../../../stack-of-tasks/pinocchio)
-- [gepetto-viewer-corba](../../../gepetto/gepetto-viewer-corba)
-- [example-robot-data](../../../gepetto/example-robot-data)
+- [pinocchio](https://github.com/stack-of-tasks/pinocchio)
+- [gepetto-viewer-corba](https://github.com/gepetto/gepetto-viewer-corba)
+- [example-robot-data](https://github.com/gepetto/example-robot-data)
 
 ```
 py=27
