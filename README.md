@@ -1,4 +1,4 @@
-# Gepetto softwares integration tests
+# Gepetto Demos
 
 ## Robots
 
