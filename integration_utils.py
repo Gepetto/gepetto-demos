@@ -8,6 +8,8 @@ parser.add_argument('--python', default=27)
 parser.add_argument('--qt', default=4)
 parser.add_argument(
     '--rbprm_path', default='/local/gsaurel/humanoid-path-planner', help='TODO this scripts should be installed')
+parser.add_argument(
+    '--hpp_doc_path', default='/local/gsaurel/humanoid-path-planner', help='TODO this scripts should be packaged')
 
 
 def wrap_with_processes(processes, f, deps):

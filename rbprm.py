@@ -3,7 +3,6 @@
 from pathlib import Path
 from subprocess import Popen
 
-import pinocchio as pin
 from integration_utils import wrap_with_processes
 
 DEPS = ['py-qt-hpp-gepetto-viewer', 'hpp-rbprm-corba', 'osg-dae', 'py-pinocchio']
