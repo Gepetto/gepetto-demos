@@ -12,7 +12,7 @@ Run examples available on the crocoddyl package.
 ```
 py=27
 qt=4
-sudo apt install -qqy robotpkg-py${py}-qt${qt}-gepetto-viewer-corba robotpkg-py${py}-crocoddyl robotpkg-example-robot-data
+sudo apt install -qqy robotpkg-py${py}-qt${qt}-gepetto-viewer-corba robotpkg-py${py}-crocoddyl robotpkg-example-robot-data robotpkg-osg-dae
 ```
 
 ## Available options

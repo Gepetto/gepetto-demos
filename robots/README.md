@@ -11,7 +11,7 @@ Load a robot in a viewer, and put it in a standard posture.
 ```
 py=27
 qt=4
-sudo apt install -qqy robotpkg-py${py}-pinocchio robotpkg-py${py}-qt${qt}-gepetto-viewer-corba robotpkg-example-robot-data
+sudo apt install -qqy robotpkg-py${py}-pinocchio robotpkg-py${py}-qt${qt}-gepetto-viewer-corba robotpkg-example-robot-data robotpkg-osg-dae
 ```
 
 ## Available options
