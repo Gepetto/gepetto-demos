@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 from argparse import ArgumentParser
 from pathlib import Path
@@ -12,7 +12,7 @@ ROBOTS = {
 }
 
 parser = ArgumentParser()
-parser.add_argument('robot', nargs='?', default=ROBOTS.keys()[0], choices=ROBOTS.keys())
+parser.add_argument('robot', nargs='?', default=list(ROBOTS.keys())[0], choices=ROBOTS.keys())
 parser.add_argument('--robotpkg_prefix', default='/opt/openrobots')
 
 
